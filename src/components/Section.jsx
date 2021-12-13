@@ -11,19 +11,20 @@ function Section({
 }) {
   return (
     <Wrap bgImage={backgroundImg}>
-      <Fade bottom>
+      <Fade top>
         <ItemText>
           <h1>{title}</h1>
           <p>{description}</p>
         </ItemText>
       </Fade>
       <Buttons>
-        <Fade bottom>
-          <ButtonGroup>
+          <Fade top>
+          <ButtonGroup> 
             <LeftButton>{leftBtnTxt}</LeftButton>
             {rightBtnTxt && <RightButton>{rightBtnTxt}</RightButton>}
+            
           </ButtonGroup>
-        </Fade>
+         </Fade>
         <DownArrow src="./images/down-arrow.svg"/>
       </Buttons>
     </Wrap>
